@@ -17,6 +17,7 @@ export default function Header() {
       style={{
         background: "#091C29",
       }}
+      id="header"
     >
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
         <div className="w-full md:w-2/5">
