@@ -22,6 +22,7 @@ export default function ProjectLeft({ project, animated }) {
             : "",
           boxShadow:
             "35px 50px 90px -25px rgba(50, 50, 95, 0.5), 20px 35px 75px -35px rgba(0, 0, 0, 0.5)",
+            background: "#FEFEFE"
         }}
       >
         <ProjectDetail project={project} />

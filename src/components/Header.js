@@ -15,7 +15,7 @@ export default function Header() {
     <div
       className="min-h-screen flex items-center justify-center"
       style={{
-        background: "#091C29",
+        background: "#89cff0",
       }}
       id="header"
     >
