@@ -6,7 +6,7 @@ export default function ProjectRight({ project, animated }) {
   return (
     <div className="flex flex-col md:flex-row md:space-x-12 justify-between md:ml-24 items-center w-11/12 mx-auto mt-10 mb-10">
       <div
-        className="transtion duration-2000 ease-in-out p-10 max-w-xl lg:max-w-3xl rounded-lg hidden md:block"
+        className="transtion duration-2000 text-blue-900 bg-blue-200 ease-in-out p-10 min-w-3xl max-w-xl lg:max-w-xl rounded-lg hidden md:block"
         style={{
           border: "1px solid #e5ecf9",
           transform: animated
@@ -14,7 +14,6 @@ export default function ProjectRight({ project, animated }) {
             : "",
           boxShadow:
             "35px 50px 90px -25px rgba(50, 50, 95, 0.5), 20px 35px 75px -35px rgba(0, 0, 0, 0.5)",
-            background: "#FEFEFE"
         }}
       >
         <ProjectDetail project={project} />
@@ -57,7 +56,7 @@ const ProjectDetail = ({ project }) => {
       <button
         className={`${
           animated ? "" : "translate-y-10 opacity-0"
-        } transform transition duration-2000  px-20 py-3 m-4 bg-black flex justify-around text-white rounded-lg shadow-2xl`}
+        } transform transition duration-2000  px-20 py-3 m-4 bg-blue-800 flex justify-around text-white rounded-lg shadow-2xl`}
       >
         <img
           src="https://timo.engineer/assets/icons/rocket.svg"

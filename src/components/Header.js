@@ -13,10 +13,7 @@ export default function Header() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center"
-      style={{
-        background: "#89cff0",
-      }}
+      className="min-h-screen flex items-center justify-center bg-blue-500"
       id="header"
     >
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
@@ -24,15 +21,15 @@ export default function Header() {
           <LazyLoadImage
             src={content.header.img}
             effect="blur"
-            placeholderSrc={process.env.PUBLIC_URL + "/logo512.png"}
+            placeholderSrc={content.header.imgPlaceholder}
             className="rounded-full"
           />
         </div>
-        <div className="text-white font-dosis text-center md:text-left">
+        <div className="text-blue-100 font-dosis text-center md:text-left">
           <h2
             className={`${
               animated ? "" : "translate-y-10 opacity-0"
-            } transform transition duration-2000 ease-in-out text-4xl md:text-5xl font-bold`}
+            } transform transition duration-2000 ease-in-out text-4xl md:text-6xl font-bold`}
           >
             {content.header.text[0]}
             <br />
@@ -41,7 +38,7 @@ export default function Header() {
           <h1
             className={`${
               animated ? "" : "translate-y-10 opacity-0"
-            } transform transition duration-2000 ease-in-out font-bold text-2xl text-gray-500`}
+            } transform transition duration-2000 ease-in-out font-bold text-2xl text-blue-200`}
           >
             {content.header.text[2]}
             <Typical
@@ -51,7 +48,7 @@ export default function Header() {
             />
           </h1>
           <ScrollLink to="stack" smooth={true}>
-            <button className="animate-float bg-indigo-500 px-20 py-3 text-xl uppercase mt-10 rounded-lg">
+            <button className="animate-float bg-blue-800 text-blue-100 px-20 py-3 text-xl uppercase mt-10 rounded-lg">
               {content.header.btnText}
             </button>
           </ScrollLink>

@@ -16,6 +16,19 @@ module.exports = {
 
       black: '#000',
       white: '#fff',
+      primary: '#14213D',
+      secondary:'#FCA311',
+      characters: '#E5E5E5',
+      sky: {
+        dark:"#83BCFF",
+        light:"#97D2FB"
+      },
+      myBlue: {
+        t:"#80FFE8",
+        a:"#E1EFF6"
+      },
+      myPink:"#ECCBD9",
+
 
       gray: {
         100: '#f7fafc',
@@ -84,15 +97,15 @@ module.exports = {
         900: '#234e52',
       },
       blue: {
-        100: '#ebf8ff',
-        200: '#bee3f8',
-        300: '#90cdf4',
-        400: '#63b3ed',
-        500: '#4299e1',
-        600: '#3182ce',
-        700: '#2b6cb0',
-        800: '#2c5282',
-        900: '#2a4365',
+        100: '#CAF0F8',
+        200: '#ADE8F4',
+        300: '#90E0EF',
+        400: '#48CAE4',
+        500: '#00B4D8',
+        600: '#0096C7',
+        700: '#0077B6',
+        800: '#023E8A',
+        900: '#03045E',
       },
       indigo: {
         100: '#ebf4ff',

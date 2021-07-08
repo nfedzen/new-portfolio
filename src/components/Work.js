@@ -10,16 +10,13 @@ export default function Work() {
 
   return (
     <div
-      className="min-h-screen flex justify-center items-center flex-col "
-      style={{
-        background: "#89cff0",
-      }}
+      className="min-h-screen flex justify-center items-center flex-col bg-blue-500 "
       id="mywork"
     >
-      <h1 className="text-5xl font-dosis font-bold mt-10">
+      <h1 className="text-5xl font-dosis font-bold mt-10 text-blue-800">
         {content.work.title}
       </h1>
-      <p className="text-gray-600 text-2xl font-dosis mb-12">I have done</p>
+      <p className="text-blue-200 text-2xl font-dosis mb-12">I have done</p>
       <div className="hidden md:block">
         {content.work.projects.map((project, key) => {
         if (key % 2 === 0) {
