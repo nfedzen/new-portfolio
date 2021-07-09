@@ -10,7 +10,7 @@ export default function Work() {
 
   return (
     <div
-      className="min-h-screen flex justify-center items-center flex-col bg-blue-500 "
+      className="min-h-screen flex justify-center items-center flex-col bg-blue-400 "
       id="mywork"
     >
       <h1 className="text-5xl font-dosis font-bold mt-10 text-blue-800">

@@ -52,18 +52,38 @@ const ProjectDetail = ({ project }) => {
       >
         {project.desc}
       </p>
-      <button
-        className={`${
-          animated ? "" : "translate-y-10 opacity-0"
-        } transform transition duration-2000  px-20 py-3 m-4 bg-blue-800 flex justify-around text-white rounded-lg shadow-2xl`}
-      >
-        <img
-          src="https://timo.engineer/assets/icons/rocket.svg"
-          alt="rocket"
-          className="mr-5"
-        />
-        <p className="text-lg">Website</p>
-      </button>
+
+      {project.link.site ? 
+        <a href={project.link.site}>
+          <button
+            className={`${
+              animated ? "" : "translate-y-10 opacity-0"
+            } transform transition duration-2000 px-20 py-3 m-4 bg-blue-800 flex justify-around text-white rounded-lg shadow-2xl`}
+          >
+            <img
+              src="https://timo.engineer/assets/icons/rocket.svg"
+              alt="rocket"
+              className="mr-5"
+            />
+            <p className="text-lg">Website</p>
+          </button>
+        </a> : <a href={project.link.github}>
+          <button
+            className={`${
+              animated ? "" : "translate-y-10 opacity-0"
+            } transform transition duration-2000 px-20 py-3 m-4 bg-blue-800 flex justify-around text-white rounded-lg shadow-2xl`}
+          >
+            <img
+              src="https://timo.engineer/assets/icons/rocket.svg"
+              alt="rocket"
+              className="mr-5"
+            />
+            <p className="text-lg">Github</p>
+          </button>
+        </a>
+      }
+        
+
     </div>
   );
 };
