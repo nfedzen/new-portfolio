@@ -4,7 +4,7 @@ import useWindowPosition from "../hook/useWindowPostion";
 
 export default function ProjectRight({ project, animated }) {
   return (
-    <div className="flex flex-col md:flex-row md:space-x-12 justify-between md:ml-24 items-center w-11/12 mx-auto mt-10 mb-10">
+    <div className="flex flex-col md:flex-row md:space-x-12 justify-center items-center justify-between md:ml-24 items-center w-11/12 mx-auto mt-10 mb-10">
       <div
         className="transtion duration-2000 text-blue-900 bg-blue-200 ease-in-out p-10 min-w-3xl max-w-xl lg:max-w-xl rounded-lg hidden md:block"
         style={{
@@ -38,7 +38,7 @@ const ProjectDetail = ({ project }) => {
   const animated = useWindowPosition("header", 0.6);
 
   return (
-    <div >
+    <div className="flex flex-col text-blue-800 items-center md:mx-auto">
       <h1
         className={` ${
           animated ? "" : "translate-y-10 opacity-0"
@@ -53,18 +53,36 @@ const ProjectDetail = ({ project }) => {
       >
         {project.desc}
       </p>
-      <button
-        className={`${
-          animated ? "" : "translate-y-10 opacity-0"
-        } transform transition duration-2000  px-20 py-3 m-4 bg-blue-800 flex justify-around text-white rounded-lg shadow-2xl`}
-      >
-        <img
-          src="https://timo.engineer/assets/icons/rocket.svg"
-          alt="rocket"
-          className="mr-5"
-        />
-        <p className="text-lg">Website</p>
-      </button>
+      
+      {project.link.site ? 
+        <a href={project.link.site}>
+          <button
+            className={`${
+              animated ? "" : "translate-y-10 opacity-0"
+            } transform transition duration-2000 px-20 py-3 m-4 bg-blue-800 flex justify-around text-white rounded-lg shadow-2xl`}
+          >
+            <img
+              src="https://timo.engineer/assets/icons/rocket.svg"
+              alt="rocket"
+              className="mr-5"
+            />
+            <p className="text-lg">Website</p>
+          </button>
+        </a> : <a href={project.link.github}>
+          <button
+            className={`${
+              animated ? "" : "translate-y-10 opacity-0"
+            } transform transition duration-2000 px-20 py-3 m-4 bg-blue-800 flex justify-around text-white rounded-lg shadow-2xl`}
+          >
+            <img
+              src="https://timo.engineer/assets/icons/rocket.svg"
+              alt="rocket"
+              className="mr-5"
+            />
+            <p className="text-lg">Github</p>
+          </button>
+        </a>
+      }
     </div>
   );
 };

@@ -16,7 +16,7 @@ export default function Contact() {
         style={{
           minHeight: '50vh',
         }}
-        className="w-full md:w-4/5 md:rounded-xl bg-blue-300 shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center"
+        className="w-full md:w-4/5 md:rounded-xl bg-blue-300 shadow-2xl pb-10 flex md:flex-row flex-col-reverse justify-around items-center"
       >
         <LazyLoadImage
           effect="blur"
